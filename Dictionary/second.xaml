@@ -4,9 +4,13 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Dictionary"
-        mc:Ignorable="d"
-        Title="second" Height="450" Width="800">
-    <Grid>
-        
+        mc:Ignorable="d" d:DesignWidth="575.507" Height="246.898">
+    <Grid Margin="0,0,0,282">
+        <TextBox x:Name="foreign2" HorizontalAlignment="Left" Height="60" Margin="41,63,0,-123" TextWrapping="Wrap" VerticalAlignment="Top" Width="246"/>
+        <TextBox x:Name="Native2" HorizontalAlignment="Left" Height="60" Margin="330,63,0,-123" TextWrapping="Wrap" VerticalAlignment="Top" Width="226" RenderTransformOrigin="-0.275,0.542"/>
+        <Label Content="Label" HorizontalAlignment="Left" Height="28" Margin="41,30,0,-58" VerticalAlignment="Top" Width="52"/>
+        <Label Content="Label" HorizontalAlignment="Left" Height="39" Margin="330,30,0,-69" VerticalAlignment="Top" Width="80"/>
+        <Button x:Name="ADD2" Content="Добавить" HorizontalAlignment="Left" Height="41" Margin="232,147,0,-188" VerticalAlignment="Top" Width="153" Click="ADD2_Click"/>
+
     </Grid>
 </Window>

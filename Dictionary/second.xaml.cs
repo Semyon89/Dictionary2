@@ -19,9 +19,18 @@ namespace Dictionary
     /// </summary>
     public partial class second : Window
     {
-        public second()
+        public second(string s)
         {
             InitializeComponent();
+            foreign2.Text = s;
+        }
+
+        private void ADD2_Click(object sender, RoutedEventArgs e)
+        {
+            //Mw.IsEnabled = false;
+            MainWindow.dictionary.Add(foreign2.Text, Native2.Text);
+            Close();
+           // Mw.IsEnabled = true;
         }
     }
 }

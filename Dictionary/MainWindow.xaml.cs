@@ -20,8 +20,8 @@ namespace Dictionary
     /// </summary>
     public partial class MainWindow : Window
     {
-        Dictionary<string, string> dictionary = new Dictionary<string, string>();
-        KeyValuePair<string, string> keyValuePair;
+       static public Dictionary<string, string> dictionary = new Dictionary<string, string>();
+        //KeyValuePair<string, string> keyValuePair;
         bool flag = false;
         public MainWindow()
         {
@@ -53,9 +53,8 @@ namespace Dictionary
                         MessageBoxImage.Question);
                     if (result == MessageBoxResult.Yes)
                     {
-                        second second = new second();
-                        FirstWin.IsEnabled = false;
-                        second.Show();
+                        second second = new second(Forein_word.Text);
+                        second.ShowDialog();
                     }
                 }
             }
