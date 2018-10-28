@@ -5,8 +5,53 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Dictionary"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Переводчик" Height="450" Width="800">
     <Grid>
-        
+        <Button x:Name="Translate" Content="Перевести" HorizontalAlignment="Left" Margin="137,301,0,0" VerticalAlignment="Top" Width="113" RenderTransformOrigin="0.5,0.5" Height="74" Click="Translate_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-5.207"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="ADD_WORD" Content="Добавить слово" HorizontalAlignment="Left" Margin="362,296,0,0" VerticalAlignment="Top" Width="113" Height="65" Click="ADD_WORD_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="DELETE_WORD" Content="Удалить слово" HorizontalAlignment="Left" Margin="584,285,0,0" VerticalAlignment="Top" Width="129" Height="58" RenderTransformOrigin="-0.013,0.624" Click="DELETE_WORD_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="19.093"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <TextBox x:Name="Forein_word" HorizontalAlignment="Left" Height="55" Margin="75,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="268">
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+        <Label x:Name="Label_1" Content="Label" HorizontalAlignment="Left" Margin="75,28,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Label_2" Content="Label" HorizontalAlignment="Left" Margin="411,28,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="To_Russian" Content="На русский" HorizontalAlignment="Left" Margin="75,161,0,0" VerticalAlignment="Top" Checked="To_Russian_Checked"/>
+        <RadioButton x:Name="To_English" Content="To English" HorizontalAlignment="Left" Margin="75,190,0,0" VerticalAlignment="Top" Checked="To_English_Checked"/>
+        <TextBox x:Name="Native_word" HorizontalAlignment="Left" Height="55" Margin="420,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="334">
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+
     </Grid>
 </Window>
