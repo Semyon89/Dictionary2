@@ -1,2 +1,2 @@
 # Dictionary2
-C# project
+C# WPF project 
