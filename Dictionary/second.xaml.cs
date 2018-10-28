@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace Dictionary
 {
     /// <summary>
-    /// Логика взаимодействия для Question.xaml
+    /// Логика взаимодействия для second.xaml
     /// </summary>
-    public partial class Question : Window
+    public partial class second : Window
     {
-        public Question()
+        public second()
         {
             InitializeComponent();
         }

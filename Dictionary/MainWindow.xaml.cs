@@ -53,7 +53,9 @@ namespace Dictionary
                         MessageBoxImage.Question);
                     if (result == MessageBoxResult.Yes)
                     {
-                        Question questionr = new Question();
+                        second second = new second();
+                        FirstWin.IsEnabled = false;
+                        second.Show();
                     }
                 }
             }
